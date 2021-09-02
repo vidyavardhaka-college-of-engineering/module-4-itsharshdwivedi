@@ -4,7 +4,7 @@
 //Output:Sum=20
 
 #include <stdio.h>
-void main() 
+int main() 
 {
    int arr1[10];
    int i,n, sum = 0;
@@ -19,8 +19,9 @@ void main()
 	  } 	
   pt = arr1; // pt store the base address of array arr1
   for (i = 0; i < n; i++) {
-      // write the code to calculate sum
-     
+      sum=sum+*pt;
+      pt++;// write the code to calculate sum
    }
   printf("Sum=%d",sum);
+  return 0;
 }
